@@ -1,19 +1,18 @@
-import './App.css';
-import logo from './logo.svg';
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Inicio from "./paguinas/inicio";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          hola mundo
-          
-        </p>
+function App (){
+return(
+<div>
+<BrowserRouter>
+  <Routes>
+    <Route path="/" element={<Inicio/>} />
+  </Routes>
+</BrowserRouter>
+</div>
+)
 
-      </header>
-    </div>
-  );
 }
 
 export default App;
