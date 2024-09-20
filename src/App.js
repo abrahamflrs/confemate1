@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Inicio from "./paguinas/inicio";
+import Inicio from "./inicio";
 
 function App (){
 return(
